@@ -1,0 +1,260 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.header-logo {
+  color: rgb(255, 166, 0);
+  font-size: 40px;
+}
+.header-nav ul {
+  display: flex;
+}
+.header-nav ul li:first-child {
+  color: rgb(255, 166, 0);
+}
+.header-nav li {
+  list-style-type: none;
+  list-style-type: none;
+  margin: 11px 26px 0px 0px;
+}
+/* .header-nav li:first-child(1){
+    color: rgb(255, 166, 0);
+} */
+.banner-section {
+  width: 100%;
+  background-image: linear-gradient(rgb(247, 247, 247), rgb(255, 254, 254));
+  border: 1px red solid;
+}
+.banner-section .banner-text-section {
+  display: inline-block;
+  width: 50%;
+}
+.banner-section .banner-text {
+  margin-top: 70px;
+  margin-left: 284px;
+  line-height: 30px;
+  font-size: 24px;
+  color: rgb(192, 189, 189);
+}
+.banner-section .banner-text .banner-inner-text-bold {
+  color: rgb(107, 106, 106);
+}
+.banner-section .banner-text-section .banner-text .banner-inner-text {
+  color: rgb(255, 166, 0);
+}
+.banner-section .banner-button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.banner-section .banner-button-hire-me {
+  width: 88px;
+  height: 30px;
+  background-color: rgb(255, 166, 0);
+  color: wheat;
+  border: 1px rgb(255, 166, 0) solid;
+}
+.banner-section .banner-button-about-me {
+  width: 88px;
+  height: 30px;
+  border: 1px rgb(255, 166, 0) solid;
+  color: rgb(255, 166, 0);
+  background-color: white;
+}
+.banner-section .banner-email {
+  text-align: center;
+  margin-top: 40px;
+  color: #000;
+}
+.banner-section .banner-email p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+}
+.banner-section .banner-image {
+  width: 50%;
+  /* display: inline-block; */
+  float: right;
+  clear: both;
+}
+.about-section {
+  width: 100%;
+  background-image: linear-gradient(rgb(255, 254, 254), rgb(236, 235, 235));
+  border: 1px solid pink;
+  padding: 30px;
+}
+.about-section .about-image {
+  width: 43%;
+  display: inline-block;
+  /* margin: 0 auto; */
+  text-align: right;
+}
+.about-section .about-text-section {
+  width: 56%;
+  /* display: inline-block; */
+  float: right;
+  clear: both;
+}
+.about-section .about-text {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.about-section .about-text h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.about-section .about-text-section p {
+  font-size: 24px;
+  line-height: 22px;
+  color: rgb(160, 158, 158);
+}
+.expertise-section {
+  width: 100%;
+  background-image: linear-gradient(white, rgb(236, 234, 234));
+  border: 1px green solid;
+}
+.expertise-section .expertise-heading h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+.expertise-section .expertise-heading p {
+  font-size: 24px;
+  line-height: 22px;
+  color: rgb(90, 90, 90);
+  text-align: center;
+  margin-bottom: 40px;
+  word-spacing: 2px;
+}
+.expertise-section .expertise-progress {
+  width: 70%;
+  display: inline-block;
+  text-align: center;
+}
+.expertise-section .expertise-image {
+  width: 29%;
+  float: right;
+}
+.services-section {
+  width: 100%;
+  background-image: linear-gradient(white, rgb(223, 222, 222));
+}
+.services-section .services-heading h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+.services-section .services-heading p {
+  font-size: 24px;
+  color: rgb(90, 90, 90);
+  text-align: center;
+  margin-bottom: 40px;
+  word-spacing: 2px;
+}
+.services-section .services-high-quality {
+  color: #000;
+}
+.services-section .services-main-div {
+  display: flex;
+  justify-content: space-around;
+}
+.services-section .section-heading-number {
+  text-align: center;
+  margin-top: 10px;
+}
+.services-section .section-heading-number p {
+  text-align: center;
+  color: rgb(255, 191, 72);
+  border-radius: 50%;
+  font-size: 53px;
+  width: 22%;
+  display: inline-block;
+  border: 1px solid rgb(255, 203, 106);
+}
+.services-main-div .services-section1,
+.services-section2,
+.services-section3 {
+  background-color: rgb(228, 225, 225);
+  width: 20%;
+}
+.services-section li {
+  list-style-type: none;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgb(63, 63, 63);
+}
+.services-main-div img {
+  margin-top: 35px;
+}
+.contact-section {
+  width: 100%;
+  background-image: linear-gradient(rgb(231, 230, 230), white);
+  border: 1px blue solid;
+}
+.contact-section .contact-heading h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+.contact-section .contact-heading p {
+  font-size: 24px;
+  color: rgb(90, 90, 90);
+  text-align: center;
+  margin-bottom: 40px;
+  word-spacing: 2px;
+}
+.contact-section .contact-image {
+  width: 35%;
+  display: inline-block;
+  text-align: right;
+}
+.contact-section .contact-form {
+  width: 64%;
+  float: right;
+}
+.contact-section .contact-form input,
+textarea,
+button {
+  display: block;
+  margin-bottom: 20px;
+}
+.contact-section .contact-form button {
+  margin-left: 90px;
+}
+.contact-section .contact-main-div {
+  display: flex;
+  justify-content: space-around;
+}
+.contact-section .contact-main-div .contact-section1,
+.contact-section2,
+.contact-section3 {
+  background-color: rgb(228, 225, 225);
+  width: 20%;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 30px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: rgb(126, 126, 126);
+}
+.contact-section .contact-main-div p {
+  margin-bottom: 20px;
+}
+.contact-section .contact-social-links {
+  text-align: center;
+  background-color: lightgrey;
+}
+.footer-section {
+  text-align: center;
+  background-color: orange;
+  color: wheat;
+  padding: 5px;
+}
