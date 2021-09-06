@@ -3,6 +3,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+/* Header Section */
+
 .header-section {
   display: flex;
   justify-content: space-around;
@@ -24,9 +27,8 @@
   list-style-type: none;
   margin: 11px 26px 0px 0px;
 }
-/* .header-nav li:first-child(1){
-    color: rgb(255, 166, 0);
-} */
+
+/* Banner Section */
 .banner-section {
   width: 100%;
   background-image: linear-gradient(rgb(247, 247, 247), rgb(255, 254, 254));
@@ -84,6 +86,8 @@
   float: right;
   clear: both;
 }
+/* About Section */
+
 .about-section {
   width: 100%;
   background-image: linear-gradient(rgb(255, 254, 254), rgb(236, 235, 235));
@@ -137,6 +141,9 @@
   width: 70%;
   display: inline-block;
   text-align: center;
+}
+.expertise-section .expertise-progress img {
+  width: 100%;
 }
 .expertise-section .expertise-image {
   width: 29%;
@@ -215,6 +222,9 @@
   display: inline-block;
   text-align: right;
 }
+.contact-section .contact-image img {
+  width: 100%;
+}
 .contact-section .contact-form {
   width: 64%;
   float: right;
@@ -257,4 +267,111 @@ button {
   background-color: orange;
   color: wheat;
   padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    display: block;
+  }
+  .header-logo {
+    text-align: center;
+  }
+  .header-nav ul {
+    display: block;
+    text-align: center;
+  }
+  .header-nav ul li {
+    margin: 11px 0px 11px 0px;
+  }
+
+  /* Banner Section */
+  .banner-section .banner-text-section {
+    width: 100%;
+  }
+  .banner-section .banner-text {
+    margin-left: 50px;
+  }
+  .banner-section .banner-image {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* About Me Section */
+
+  .about-section .about-image {
+    width: 100%;
+    text-align: center;
+  }
+  .about-section .about-image img {
+    max-width: 100%;
+  }
+  .about-section .about-text-section {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  /* Expertise Section */
+  .expertise-section .expertise-progress {
+    width: 100%;
+    text-align: center;
+  }
+  .expertise-section .expertise-progress img {
+    max-width: 100%;
+  }
+  .expertise-section .expertise-image {
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+
+  /* Services Section */
+  .services-section .services-main-div {
+    display: block;
+    width: 100%;
+  }
+  .services-section .services-main-div .services-section1,
+  .services-section2,
+  .services-section3 {
+    width: 40%;
+    margin: 0 auto;
+  }
+  /* Contact Me */
+  .contact-section .contact-image {
+    width: 100%;
+    text-align: center;
+  }
+  .contact-section .contact-image img {
+    max-width: 100%;
+  }
+  .contact-section .contact-form {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .contact-section .contact-form input,
+  textarea {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .contact-section .contact-form button {
+    margin-top: 20px !important;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .contact-section .contact-main-div {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-section .contact-main-div .contact-section1,
+  .contact-section2,
+  .contact-section3 {
+    min-width: 240px;
+    width: 50%;
+    margin: auto;
+  }
 }
