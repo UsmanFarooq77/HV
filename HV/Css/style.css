@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html{
+    font-size: 16px;
+    line-height: 16px;
+}
+
 /* Header Section */
 
 .header-section {
@@ -14,7 +19,7 @@
 }
 .header-logo {
   color: rgb(255, 166, 0);
-  font-size: 40px;
+  font-size: 2.4rem;
 }
 .header-nav ul {
   display: flex;
@@ -41,8 +46,8 @@
 .banner-section .banner-text {
   margin-top: 70px;
   margin-left: 284px;
-  line-height: 30px;
-  font-size: 24px;
+  line-height: 1.875rem;
+  font-size: 1.5rem;
   color: rgb(192, 189, 189);
 }
 .banner-section .banner-text .banner-inner-text-bold {
@@ -76,8 +81,8 @@
   color: #000;
 }
 .banner-section .banner-email p {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0.9rem;
+  line-height: 1.125rem;
   color: #000;
 }
 .banner-section .banner-image {
@@ -112,11 +117,11 @@
 }
 .about-section .about-text h1 {
   margin-bottom: 20px;
-  font-size: 40px;
+  font-size: 2.4rem;
 }
 .about-section .about-text-section p {
-  font-size: 24px;
-  line-height: 22px;
+  font-size: 1.5rem;
+  line-height: 1.375rem;
   color: rgb(160, 158, 158);
 }
 .expertise-section {
@@ -125,13 +130,13 @@
   border: 1px green solid;
 }
 .expertise-section .expertise-heading h1 {
-  font-size: 40px;
+  font-size: 2.4rem;
   text-align: center;
   margin-top: 20px;
 }
 .expertise-section .expertise-heading p {
-  font-size: 24px;
-  line-height: 22px;
+  font-size: 1.5rem;
+  line-height: 1.375rem;
   color: rgb(90, 90, 90);
   text-align: center;
   margin-bottom: 40px;
@@ -154,12 +159,12 @@
   background-image: linear-gradient(white, rgb(223, 222, 222));
 }
 .services-section .services-heading h1 {
-  font-size: 40px;
+  font-size: 2.4rem;
   text-align: center;
   margin-top: 20px;
 }
 .services-section .services-heading p {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgb(90, 90, 90);
   text-align: center;
   margin-bottom: 40px;
@@ -172,18 +177,22 @@
   display: flex;
   justify-content: space-around;
 }
-.services-section .section-heading-number {
-  text-align: center;
+.services-section .services-heading-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   margin-top: 10px;
 }
-.services-section .section-heading-number p {
-  text-align: center;
-  color: rgb(255, 191, 72);
-  border-radius: 50%;
-  font-size: 53px;
-  width: 22%;
-  display: inline-block;
-  border: 1px solid rgb(255, 203, 106);
+.services-section .services-heading-number p {
+    text-align: center;
+    color: rgb(255, 191, 72);
+    border-radius: 50%;
+    font-size: 3rem;
+    width: 22%;
+    min-width: 70px;
+    display: inline-block;
+    border: 1px solid rgb(255, 203, 106);
+    line-height: 61px;
 }
 .services-main-div .services-section1,
 .services-section2,
@@ -193,8 +202,8 @@
 }
 .services-section li {
   list-style-type: none;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   color: rgb(63, 63, 63);
 }
 .services-main-div img {
@@ -206,12 +215,12 @@
   border: 1px blue solid;
 }
 .contact-section .contact-heading h1 {
-  font-size: 40px;
+  font-size: 2.4rem;
   text-align: center;
   margin-top: 20px;
 }
 .contact-section .contact-heading p {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgb(90, 90, 90);
   text-align: center;
   margin-bottom: 40px;
@@ -223,7 +232,7 @@
   text-align: right;
 }
 .contact-section .contact-image img {
-  width: 100%;
+  max-width: 100%;
 }
 .contact-section .contact-form {
   width: 64%;
@@ -252,7 +261,7 @@ button {
   padding-top: 30px;
   border-radius: 12px;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgb(126, 126, 126);
 }
 .contact-section .contact-main-div p {
@@ -269,9 +278,14 @@ button {
   padding: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 996px) {
+    /* html{
+        font-size: 8px;
+        line-height: 8px;
+    } */
   .header-section {
     display: block;
+    min-width: 400px;
   }
   .header-logo {
     text-align: center;
@@ -285,6 +299,9 @@ button {
   }
 
   /* Banner Section */
+  .banner-section{
+    min-width: 400px;
+  }
   .banner-section .banner-text-section {
     width: 100%;
   }
@@ -299,6 +316,9 @@ button {
 
   /* About Me Section */
 
+  .about-section{
+    min-width: 400px;
+  }
   .about-section .about-image {
     width: 100%;
     text-align: center;
@@ -313,6 +333,9 @@ button {
   }
 
   /* Expertise Section */
+  .expertise-section{
+    min-width: 400px;
+  }
   .expertise-section .expertise-progress {
     width: 100%;
     text-align: center;
@@ -327,10 +350,18 @@ button {
   }
 
   /* Services Section */
+  .services-section{
+    min-width: 400px;
+  }
   .services-section .services-main-div {
     display: block;
     width: 100%;
   }
+
+  /* .services-section .services-heading-number p {
+    font-size: 1rem;
+  } */
+
   .services-section .services-main-div .services-section1,
   .services-section2,
   .services-section3 {
@@ -338,13 +369,16 @@ button {
     margin: 0 auto;
   }
   /* Contact Me */
+  .contact-section{
+    min-width: 400px;
+  }
   .contact-section .contact-image {
     width: 100%;
     text-align: center;
   }
-  .contact-section .contact-image img {
+  /* .contact-section .contact-image img {
     max-width: 100%;
-  }
+  } */
   .contact-section .contact-form {
     width: 100%;
     float: none;
@@ -374,4 +408,22 @@ button {
     width: 50%;
     margin: auto;
   }
+  .footer-section{
+      min-width: 400px;
+  }
+}
+@media (min-width:1920px) {
+    html{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .banner-section .banner-image img{
+        max-width: 37%;
+    }
+    .services-section .services-heading-number p {
+        font-size: 3.2rem;
+        text-align: center;
+        line-height: 100px;
+        height: 110px;
+      }
 }
