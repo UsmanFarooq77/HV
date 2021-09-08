@@ -6,7 +6,7 @@
 
 html {
   font-size: 16px;
-  line-height: 16px;
+  line-height: normal;
 }
 
 /* Header Section */
@@ -14,8 +14,8 @@ html {
 .header-section {
   display: flex;
   justify-content: space-around;
-  margin-top: 1.25em;
-  margin-bottom: 1em;
+  align-items: center;
+  margin-bottom: 0.5em;
 }
 .header-logo {
   color: rgb(255, 166, 0);
@@ -30,7 +30,7 @@ html {
 .header-nav li {
   list-style-type: none;
   list-style-type: none;
-  margin: 0px 26px 0px 0px;
+  margin: 11px 26px 0px 0px;
   position: relative;
 }
 .header-nav ul li:hover {
@@ -64,7 +64,7 @@ html {
 .banner-section .banner-text {
   margin-top: 70px;
   margin-left: 284px;
-  line-height: 1.875rem;
+  line-height: 1.3;
   font-size: 1.5rem;
   color: rgb(192, 189, 189);
 }
@@ -84,9 +84,10 @@ html {
   min-width: 88px;
   height: 30px;
   background-color: rgb(255, 166, 0);
-  color: wheat;
+  color: white;
   border: 1px rgb(255, 166, 0) solid;
   font-size: 1rem;
+  cursor: pointer;
 }
 .banner-section .banner-button-about-me {
   width: 22%;
@@ -96,6 +97,7 @@ html {
   color: rgb(255, 166, 0);
   background-color: white;
   font-size: 1rem;
+  cursor: pointer;
 }
 .banner-section .banner-email {
   text-align: center;
@@ -104,7 +106,6 @@ html {
 }
 .banner-section .banner-email p {
   font-size: 0.9rem;
-  line-height: 1.125rem;
   color: #000;
 }
 .banner-section .banner-image {
@@ -143,11 +144,10 @@ html {
 }
 .about-section .about-text-section p {
   font-size: 1.5rem;
-  line-height: 1.375rem;
   color: rgb(160, 158, 158);
 }
 .about-section .about-text-section h3 {
-  line-height: 1.375rem;
+  /* line-height: 1.375rem; */
 }
 .expertise-section {
   width: 100%;
@@ -161,7 +161,7 @@ html {
 }
 .expertise-section .expertise-heading p {
   font-size: 1.5rem;
-  line-height: 1.5rem;
+  /* line-height: 1.5rem; */
   color: rgb(90, 90, 90);
   text-align: center;
   margin-bottom: 40px;
@@ -183,6 +183,26 @@ html {
   width: 100%;
   background-image: linear-gradient(white, rgb(223, 222, 222));
 }
+.services-section .services-work-image {
+  background-image: url("../Images/work.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.services-section .services-work-experience {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-section .services-work-image p {
+  font-size: 3rem;
+  color: white;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .services-section .services-heading h1 {
   font-size: 2.4rem;
   text-align: center;
@@ -202,6 +222,7 @@ html {
   display: flex;
   justify-content: space-around;
 }
+
 .services-section .services-main-div > div:hover {
   background-color: white;
   cursor: pointer;
@@ -225,11 +246,9 @@ html {
   min-width: 70px;
   display: inline-block;
   border: 1px solid rgb(255, 203, 106);
-  line-height: 61px;
+  /* line-height: 61px; */
 }
-.services-main-div .services-section1,
-.services-section2,
-.services-section3 {
+.services-section .services-main-div .services-details {
   background-color: rgb(228, 225, 225);
   width: 20%;
 }
@@ -237,12 +256,28 @@ html {
 .services-section li {
   list-style-type: none;
   font-size: 1.5rem;
-  line-height: 1.75rem;
+  /* line-height: 1.75rem; */
   color: rgb(63, 63, 63);
+  margin-left: 5px;
 }
-.services-main-div img {
-  margin-top: 2.3em;
+.services-section li > i {
+  font-size: 13px;
+  color: #000;
 }
+.services-section .services-main-div .services-details:hover li > i {
+  color: rgb(255, 203, 106);
+}
+.services-main-div span {
+  font-size: 4rem;
+  display: inline-block;
+  margin-top: 1em;
+  color: white;
+}
+.services-main-div .services-details:hover span {
+  color: rgb(250, 239, 218);
+}
+
+/* Contact Section */
 .contact-section {
   width: 100%;
   background-image: linear-gradient(rgb(231, 230, 230), white);
@@ -283,21 +318,21 @@ button {
 }
 .contact-section .contact-form button {
   margin-left: 90px;
+  width: 12%;
+  min-width: 88px;
+  height: 30px;
+  background-color: rgb(255, 166, 0);
+  color: white;
+  border: 1px rgb(255, 166, 0) solid;
+  font-size: 1rem;
+  cursor: pointer;
 }
 .contact-section .contact-main-div {
   display: flex;
   justify-content: space-around;
 }
-.contact-section .contact-main-div > div:hover {
-  background-color: white;
-  border: 1px lightgrey solid;
-}
-.contact-section .contact-main-div > div:hover p {
-  color: #000;
-}
-.contact-section .contact-main-div .contact-section1,
-.contact-section2,
-.contact-section3 {
+
+.contact-section .contact-main-div .contact-section-links {
   background-color: rgb(228, 225, 225);
   width: 20%;
   text-align: center;
@@ -307,14 +342,78 @@ button {
   margin-bottom: 20px;
   font-size: 1.5rem;
   color: rgb(126, 126, 126);
+  border: 1px rgb(228, 225, 225) solid;
 }
 .contact-section .contact-main-div p {
   margin-bottom: 20px;
 }
+.contact-section .contact-main-div > div:hover {
+  background-color: white;
+  border: 1px lightgrey solid;
+  cursor: pointer;
+}
+.contact-section .contact-main-div > div:hover p {
+  color: #000;
+}
 .contact-section .contact-social-links {
   text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  padding: 14px;
   background-color: lightgrey;
 }
+.contact-section .contact-main-div .contact-section-links span {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.contact-section
+  .contact-main-div
+  .contact-section-links:hover
+  span
+  .fa-envelope {
+  color: orange;
+}
+.contact-section
+  .contact-main-div
+  .contact-section-links:hover
+  span
+  .fa-whatsapp {
+  color: rgb(6, 192, 6);
+}
+.contact-section
+  .contact-main-div
+  .contact-section-links:hover
+  span
+  .fa-map-marker-alt {
+  color: #000;
+}
+
+.contact-section .contact-social-links span {
+  margin-right: 40px;
+}
+.contact-section .contact-social-links .fa-facebook-f:hover {
+  color: rgb(73, 73, 167);
+  cursor: pointer;
+}
+.contact-section .contact-social-links .fa-instagram:hover {
+  color: rgb(236, 59, 89);
+  cursor: pointer;
+}
+.contact-section .contact-social-links .fa-dribbble:hover {
+  color: rgb(255, 129, 150);
+  cursor: pointer;
+}
+.contact-section .contact-social-links .fa-pinterest:hover {
+  color: red;
+  cursor: pointer;
+}
+.contact-section .contact-social-links .fa-behance:hover {
+  color: rgb(39, 39, 253);
+  cursor: pointer;
+}
+
 .footer-section {
   text-align: center;
   background-color: orange;
@@ -398,8 +497,15 @@ button {
   }
 
   /* Services Section */
+
   .services-section {
     min-width: 400px;
+  }
+  .services-section .services-work-image p {
+    font-size: 2rem;
+    color: white;
+
+    font-weight: 400;
   }
   .services-section .services-main-div {
     display: block;
@@ -410,9 +516,7 @@ button {
     font-size: 1rem;
   } */
 
-  .services-section .services-main-div .services-section1,
-  .services-section2,
-  .services-section3 {
+  .services-section .services-main-div .services-details {
     width: 40%;
     margin: 0 auto;
   }
@@ -450,9 +554,7 @@ button {
     text-align: center;
   }
 
-  .contact-section .contact-main-div .contact-section1,
-  .contact-section2,
-  .contact-section3 {
+  .contact-section .contact-main-div .contact-section-links {
     min-width: 240px;
     width: 50%;
     margin: auto;
@@ -464,7 +566,7 @@ button {
 @media (min-width: 1920px) {
   html {
     font-size: 24px;
-    line-height: 24px;
+    line-height: normal;
   }
   .banner-section .banner-image img {
     max-width: 37%;
@@ -472,7 +574,7 @@ button {
   .services-section .services-heading-number p {
     font-size: 3.2rem;
     text-align: center;
-    line-height: 100px;
+    /* line-height: 100px; */
     height: 110px;
   }
   .banner-section .banner-button-hire-me,
