@@ -31,6 +31,24 @@ html {
   list-style-type: none;
   list-style-type: none;
   margin: 0px 26px 0px 0px;
+  position: relative;
+}
+.header-nav ul li:hover {
+  cursor: pointer;
+  color: rgb(255, 166, 0);
+}
+.header-nav ul li::before {
+  content: "";
+  margin-top: 5px;
+  position: absolute;
+  background-color: rgb(255, 166, 0);
+  width: 0%;
+  height: 3px;
+  top: 100%;
+  transition: all 0.3s linear;
+}
+.header-nav ul li:hover::before {
+  width: 100%;
 }
 
 /* Banner Section */
@@ -184,6 +202,14 @@ html {
   display: flex;
   justify-content: space-around;
 }
+.services-section .services-main-div > div:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.services-section .services-main-div > div:hover .services-heading-number p {
+  background-color: rgb(250, 239, 218);
+  border: 0px white solid;
+}
 .services-section .services-heading-number {
   display: flex;
   justify-content: center;
@@ -207,6 +233,7 @@ html {
   background-color: rgb(228, 225, 225);
   width: 20%;
 }
+
 .services-section li {
   list-style-type: none;
   font-size: 1.5rem;
@@ -260,6 +287,13 @@ button {
 .contact-section .contact-main-div {
   display: flex;
   justify-content: space-around;
+}
+.contact-section .contact-main-div > div:hover {
+  background-color: white;
+  border: 1px lightgrey solid;
+}
+.contact-section .contact-main-div > div:hover p {
+  color: #000;
 }
 .contact-section .contact-main-div .contact-section1,
 .contact-section2,
