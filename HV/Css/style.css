@@ -37,7 +37,7 @@ html {
   cursor: pointer;
   color: rgb(255, 166, 0);
 }
-.header-nav ul li::before {
+.header-nav ul li a::before {
   content: "";
   margin-top: 5px;
   position: absolute;
@@ -47,7 +47,7 @@ html {
   top: 100%;
   transition: all 0.3s linear;
 }
-.header-nav ul li:hover::before {
+.header-nav ul li a:hover::before {
   width: 100%;
 }
 
@@ -337,9 +337,13 @@ button {
   .header-nav ul {
     display: block;
     text-align: center;
+    width: 11%;
+    min-width: 116px;
+    margin: auto;
   }
   .header-nav ul li {
-    margin: 11px 0px 11px 0px;
+    margin: 11px 0px 0px 0px;
+    display: inline-block;
   }
 
   /* Banner Section */
