@@ -1,0 +1,15 @@
+{
+  "name": "hv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "golive": "lt --port 5500"
+  },
+  "dependencies": {
+    "localtunnel": "^2.0.1"
+  },
+  "author": "usman",
+  "license": "ISC"
+}
