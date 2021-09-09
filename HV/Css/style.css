@@ -56,9 +56,10 @@ html {
   width: 100%;
   background-image: linear-gradient(rgb(247, 247, 247), rgb(255, 254, 254));
   border: 1px red solid;
+  display: flex;
 }
 .banner-section .banner-text-section {
-  display: inline-block;
+  /* display: inline-block; */
   width: 50%;
 }
 .banner-section .banner-text {
@@ -81,7 +82,7 @@ html {
 }
 .banner-section .banner-button-hire-me {
   width: 22%;
-  min-width: 88px;
+  min-width: 100px;
   height: 30px;
   background-color: rgb(255, 166, 0);
   color: white;
@@ -91,7 +92,7 @@ html {
 }
 .banner-section .banner-button-about-me {
   width: 22%;
-  min-width: 88px;
+  min-width: 100px;
   height: 30px;
   border: 1px rgb(255, 166, 0) solid;
   color: rgb(255, 166, 0);
@@ -110,9 +111,10 @@ html {
 }
 .banner-section .banner-image {
   width: 50%;
+  text-align: center;
   /* display: inline-block; */
-  float: right;
-  clear: both;
+  /* float: right;
+  clear: both; */
 }
 /* About Section */
 
@@ -221,6 +223,7 @@ html {
 .services-section .services-main-div {
   display: flex;
   justify-content: space-around;
+  margin-top: 1.875rem; /* important to assign value in rem units for high resolution */
 }
 
 .services-section .services-main-div > div:hover {
@@ -251,17 +254,17 @@ html {
 .services-section .services-main-div .services-details {
   background-color: rgb(228, 225, 225);
   width: 20%;
+  min-width: 247px;
 }
 
 .services-section li {
   list-style-type: none;
   font-size: 1.5rem;
-  /* line-height: 1.75rem; */
   color: rgb(63, 63, 63);
   margin-left: 5px;
 }
 .services-section li > i {
-  font-size: 13px;
+  font-size: 1rem;
   color: #000;
 }
 .services-section .services-main-div .services-details:hover li > i {
@@ -300,11 +303,11 @@ html {
 }
 .contact-section .contact-image {
   width: 35%;
-  text-align: right;
+  text-align: center;
 }
 .contact-section .contact-image img {
   min-width: 60%;
-  max-width: 100%;
+  max-width: 90%;
 }
 .contact-section .contact-form {
   width: 65%;
@@ -339,7 +342,7 @@ button {
   margin-top: 1.275em;
   padding-top: 30px;
   border-radius: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
   font-size: 1.5rem;
   color: rgb(126, 126, 126);
   border: 1px rgb(228, 225, 225) solid;
@@ -423,8 +426,8 @@ button {
 
 @media (max-width: 996px) {
   /* html{
-        font-size: 8px;
-        line-height: 8px;
+        font-size: 16px;
+        line-height: normal;
     } */
   .header-section {
     display: block;
@@ -448,6 +451,7 @@ button {
   /* Banner Section */
   .banner-section {
     min-width: 400px;
+    flex-direction: column;
   }
   .banner-section .banner-text-section {
     width: 100%;
@@ -456,9 +460,7 @@ button {
     margin-left: 50px;
   }
   .banner-section .banner-image {
-    float: none;
     width: 100%;
-    text-align: center;
   }
 
   /* About Me Section */
@@ -565,17 +567,14 @@ button {
 }
 @media (min-width: 1920px) {
   html {
-    font-size: 24px;
+    font-size: 24px !important;
     line-height: normal;
   }
-  .banner-section .banner-image img {
-    max-width: 37%;
+  .banner-section .banner-image {
+    max-width: 50%;
   }
   .services-section .services-heading-number p {
     font-size: 3.2rem;
-    text-align: center;
-    /* line-height: 100px; */
-    height: 110px;
   }
   .banner-section .banner-button-hire-me,
   .banner-button-about-me {
