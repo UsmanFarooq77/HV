@@ -148,9 +148,6 @@ html {
   font-size: 1.5rem;
   color: rgb(160, 158, 158);
 }
-.about-section .about-text-section h3 {
-  /* line-height: 1.375rem; */
-}
 .expertise-section {
   width: 100%;
   background-image: linear-gradient(white, rgb(236, 234, 234));
