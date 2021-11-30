@@ -55,7 +55,7 @@ html {
 .banner-section {
   width: 100%;
   background-image: linear-gradient(rgb(247, 247, 247), rgb(255, 254, 254));
-  border: 1px red solid;
+  /* border: 1px red solid; */
   display: flex;
 }
 .banner-section .banner-text-section {
@@ -64,7 +64,7 @@ html {
 }
 .banner-section .banner-text {
   margin-top: 70px;
-  margin-left: 284px;
+  margin-left: 130px;
   line-height: 1.3;
   font-size: 1.5rem;
   color: rgb(192, 189, 189);
@@ -121,7 +121,7 @@ html {
 .about-section {
   width: 100%;
   background-image: linear-gradient(rgb(255, 254, 254), rgb(236, 235, 235));
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   padding: 30px;
 }
 .about-section .about-image {
@@ -143,6 +143,7 @@ html {
 .about-section .about-text h1 {
   margin-bottom: 20px;
   font-size: 2.4rem;
+  color: rgb(255, 166, 0);
 }
 .about-section .about-text-section p {
   font-size: 1.5rem;
@@ -151,12 +152,14 @@ html {
 .expertise-section {
   width: 100%;
   background-image: linear-gradient(white, rgb(236, 234, 234));
-  border: 1px green solid;
+  overflow: hidden;
+  /* border: 1px green solid; */
 }
 .expertise-section .expertise-heading h1 {
   font-size: 2.4rem;
   text-align: center;
   margin-top: 1.4em;
+  color: rgb(255, 166, 0);
 }
 .expertise-section .expertise-heading p {
   font-size: 1.5rem;
@@ -170,17 +173,94 @@ html {
   width: 70%;
   display: inline-block;
   text-align: center;
+  padding: 50px;
 }
-.expertise-section .expertise-progress img {
+
+/* .expertise-section .expertise-progress img {
   width: 100%;
+} */
+.expertise-section .expertise-photoshop-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+  margin-bottom: 5px;
+}
+.expertise-section .expertise-photoshop-bar {
+  background-color: #000;
+  width: 100%;
+  height: 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.expertise-section .expertise-photoshop-bar::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  width: 93%;
+  height: 16px;
+  background-color: red;
+  border-radius: 10px;
+}
+.expertise-section .expertise-graphic-designer-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 83%;
+  margin-bottom: 5px;
+}
+.expertise-section .expertise-graphic-designer-bar {
+  background-color: #000;
+  width: 100%;
+  height: 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.expertise-section .expertise-graphic-designer-bar::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  width: 83%;
+  height: 16px;
+  background-color: pink;
+  border-radius: 10px;
+}
+.expertise-section .expertise-web-development-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  margin-bottom: 5px;
+}
+.expertise-section .expertise-web-development-bar {
+  background-color: #000;
+  width: 100%;
+  height: 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.expertise-section .expertise-web-development-bar::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  width: 98%;
+  height: 16px;
+  background-color: green;
+  border-radius: 10px;
 }
 .expertise-section .expertise-image {
   width: 29%;
   float: right;
+  margin-bottom: 26px;
+  text-align: center;
 }
 .services-section {
   width: 100%;
   background-image: linear-gradient(white, rgb(223, 222, 222));
+  padding-bottom: 50px;
 }
 .services-section .services-work-image {
   background-image: url("../Images/work.jpg");
@@ -206,6 +286,7 @@ html {
   font-size: 2.4rem;
   text-align: center;
   margin-top: 1.275em;
+  color: rgb(255, 166, 0);
 }
 .services-section .services-heading p {
   font-size: 1.5rem;
@@ -235,18 +316,19 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0.6em;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 .services-section .services-heading-number p {
   text-align: center;
   color: rgb(255, 191, 72);
   border-radius: 50%;
   font-size: 3rem;
-  width: 22%;
   min-width: 70px;
+  height: 65px;
   display: inline-block;
   border: 1px solid rgb(255, 203, 106);
-  /* line-height: 61px; */
+  line-height: 60px;
 }
 .services-section .services-main-div .services-details {
   background-color: rgb(228, 225, 225);
@@ -281,12 +363,16 @@ html {
 .contact-section {
   width: 100%;
   background-image: linear-gradient(rgb(231, 230, 230), white);
-  border: 1px blue solid;
+  margin-top: 3.275em;
+  /* border: 1px blue solid; */
+}
+.contact-section .contact-heading {
+  padding-top: 35px;
 }
 .contact-section .contact-heading h1 {
   font-size: 2.4rem;
   text-align: center;
-  margin-top: 1.275em;
+  color: rgb(255, 166, 0);
 }
 .contact-section .contact-heading p {
   font-size: 1.5rem;
@@ -455,6 +541,7 @@ button {
   }
   .banner-section .banner-text {
     margin-left: 50px;
+    margin-bottom: 35px;
   }
   .banner-section .banner-image {
     width: 100%;
@@ -518,6 +605,7 @@ button {
   .services-section .services-main-div .services-details {
     width: 40%;
     margin: 0 auto;
+    margin-bottom: 35px;
   }
   /* Contact Me */
   .contact-section {
